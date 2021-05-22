@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index 2</title>
+  </head>
+  <body>
+    <a href="index.html"><h1>Index 2</h1></a>
+
+    <input type="text" id="campo_nome" placeholder="Nome Completo" />
+
+    <button onclick="mostraNome()">Enviar</button>
+  </body>
+
+  <script>
+    function mostraNome() {
+      var nome = document.querySelector("#campo_nome").value;
+
+      alert(`Olá ${nome}`);
+
+      // CRIE UM CAMPO QUE RECEBA NOME, IDADE, SEXO
+      // DÊ UM ALERTE: "Olá <nome> você tem <idade> e <sexo> sexo"
+    }
+  </script>
+</html>
