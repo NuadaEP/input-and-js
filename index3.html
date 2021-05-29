@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="campo" placeholder="Idade" value="20" />
+
+    <select id="quem">
+      <option value="bruno">Nuada</option>
+      <option value="eduardo">Du</option>
+    </select>
+
+    <button onclick="execute()">Enviar</button>
+  </body>
+  <script>
+    function execute() {
+      const field = document.querySelector("#campo").value;
+      const who = document.querySelector("#quem").value;
+
+      if (field == "") {
+        alert(" NÃO FUNUNCIO!! ");
+
+        return false;
+      }
+
+      if (typeof parseInt(field) == "number") {
+        if (field <= 20) {
+          alert("Gabi");
+        } else if (field >= 21 && field <= 22) {
+          alert("Erik");
+        } else if (field >= 23 && field < 25) {
+          if (who == "bruno") {
+            alert("Nuada");
+          } else {
+            alert("Du");
+          }
+        } else {
+          alert("Mayara");
+        }
+
+        // alert("FUNUNCIOU!!");
+        //   console.log(typeof parseInt(field), parseInt(field));
+      }
+    }
+  </script>
+</html>
